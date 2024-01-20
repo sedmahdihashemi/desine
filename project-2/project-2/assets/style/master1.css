@@ -1,0 +1,526 @@
+.row > .row > hgroup > h3, .row > .row > hgroup > h2 {
+  color: rgb(243, 227, 227);
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.row {
+  width: 100%;
+  flex-direction: column;
+}
+.row > .row {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/pexels-muffin-creatives-1629998.jpg);
+  background-size: cover;
+  box-shadow: inset 0px -1000px rgba(0, 0, 0, 0.488);
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+.row > .row > hgroup {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row > .row > hgroup > h2 {
+  width: 100%;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.row > .row > hgroup > h3 {
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+.row > .hed {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(23, 21, 21);
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.row > .hed > div {
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  border: 2px solid whitesmoke;
+  display: flex;
+}
+.row > .hed > div > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+.row > .hed > section {
+  width: 10%;
+  height: 100%;
+}
+.row > .hed > nav {
+  width: calc(90% - 300px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row > .hed > nav > ul {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row > .hed > nav > ul > #home {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  justify-content: center;
+  position: relative;
+}
+.row > .hed > nav > ul > #home::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(245, 245, 198);
+}
+.row > .hed > nav > ul > #home > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(157, 244, 185);
+}
+.row > .hed > nav > ul > li {
+  width: 30%;
+  height: 100%;
+  list-style: none;
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+  color: rgb(16, 16, 14);
+}
+.row > .hed > nav > ul > li:hover > ul {
+  min-height: 200%;
+  overflow: visible;
+  left: 0;
+  top: 100%;
+}
+.row > .hed > nav > ul > li > ul {
+  width: 200%;
+  height: 0;
+  overflow: hidden;
+  background-color: rgb(30, 22, 22);
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  top: 100%;
+  transition: 0.4s;
+}
+.row > .hed > nav > ul > li > ul > li {
+  list-style: none;
+  width: 100%;
+  min-height: 15%;
+}
+.row > .hed > nav > ul > li > ul > li > a {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.row > .hed > nav > ul > li > ul > li > a:hover {
+  background-color: rgb(10, 136, 136);
+}
+.row > .hed > nav > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(238, 226, 226);
+}
+.row > .hed > nav > ul > li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 0.4s;
+  background-color: rgb(248, 248, 193);
+}
+.row > .hed > nav > ul > li:hover::after {
+  width: 100%;
+  left: 0;
+}
+.row .sec2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 120vh;
+}
+.row .sec2 > * {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  margin-top: 100px;
+}
+.row .sec2 > div:nth-of-type(1) > div {
+  width: 100%;
+  height: 40%;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.row .sec2 > div:nth-of-type(1) > div > h3 {
+  width: 100%;
+  font-size: 50px;
+}
+.row .sec2 > div:nth-of-type(1) > div > .khat {
+  width: 100px;
+  height: 4px;
+  background-color: rgb(178, 171, 171);
+  margin: 30px 0;
+}
+.row .sec2 > div:nth-of-type(1) > div > h5 {
+  color: #6c6a6a;
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+}
+.row .sec2 > div:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+.row .sec2 > div:nth-of-type(2) > p {
+  width: 100%;
+  color: #6c6a6a;
+  height: 60%;
+  line-height: 25px;
+  margin-top: 10px;
+  word-spacing: 5px;
+}
+.row .sec2 > div:nth-of-type(2) > figure {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: inset -500px 0px rgba(0, 0, 0, 0.454);
+}
+.row .sec2 > div:nth-of-type(2) > figure:hover {
+  box-shadow: inset -500px 0px rgba(0, 0, 0, 0);
+}
+.row .sec2 > div:nth-of-type(2) > figure:hover > img {
+  left: -10px;
+  width: 103%;
+  top: -10px;
+  height: 107%;
+  z-index: 2;
+}
+.row .sec2 > div:nth-of-type(2) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.row .sec2 > div:nth-of-type(3) {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row .sec2 > div:nth-of-type(3) > p:first-of-type {
+  width: 100%;
+  height: 25%;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+  word-spacing: 5px;
+  color: #6c6a6a;
+}
+.row .sec2 > div:nth-of-type(3) > p:last-of-type {
+  color: #6c6a6a;
+  width: 100%;
+  height: 40%;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 10px;
+  word-spacing: 5px;
+}
+
+.photo {
+  width: 100%;
+  height: 280vh;
+}
+.photo > div:nth-of-type(1) {
+  width: 100%;
+  height: 16.5%;
+  display: flex;
+  background-image: url(../img/vecteezy_mountain-landscape-with-a-stream-in-the-foreground-and_25531362.jpg);
+  background-position: center center;
+  background-size: cover;
+  transition: 1s;
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0.454);
+}
+.photo > div:nth-of-type(1):hover {
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0);
+  height: 25%;
+}
+.photo > div:nth-of-type(1) > h3 {
+  font-size: 35px;
+  color: beige;
+  margin-left: 30px;
+  display: flex;
+  align-self: center;
+}
+.photo > div:nth-of-type(2) {
+  width: 100%;
+  height: 16.5%;
+  background-image: url(../img/vecteezy_airplane-in-sky-background-illustration-ai-generative_23570111.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  transition: 1s;
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0.454);
+}
+.photo > div:nth-of-type(2):hover {
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0);
+  height: 25%;
+}
+.photo > div:nth-of-type(2) > h3 {
+  font-size: 35px;
+  color: beige;
+  margin-left: 30px;
+  display: flex;
+  align-self: center;
+}
+.photo > div:nth-of-type(3) {
+  width: 100%;
+  height: 16.5%;
+  background-image: url(../img/vecteezy_campos-dos-goytacazes-rj-brazil-2021-skyline-at-sunset_19636653.jpg);
+  background-position: left 30%;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  transition: 1s;
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0.454);
+}
+.photo > div:nth-of-type(3):hover {
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0);
+  height: 25%;
+}
+.photo > div:nth-of-type(3) > h3 {
+  font-size: 35px;
+  color: beige;
+  margin-left: 30px;
+  display: flex;
+  align-self: center;
+}
+.photo > div:nth-of-type(4) {
+  width: 100%;
+  height: 16.5%;
+  background-image: url(../img/vecteezy_beautiful-modern-house-exterior-with-carport-modern_26569806.jpg);
+  background-position: center bottom;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  transition: 1s;
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0.454);
+}
+.photo > div:nth-of-type(4):hover {
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0);
+  height: 25%;
+}
+.photo > div:nth-of-type(4) > h3 {
+  font-size: 35px;
+  color: beige;
+  margin-left: 30px;
+  display: flex;
+  align-self: center;
+}
+.photo > div:nth-of-type(5) {
+  width: 100%;
+  height: 16.5%;
+  background-image: url(../img/vecteezy_red-sofas-and-pillows-carpet-wooden-floor-on-empty-brick_4602593.jpg);
+  background-position: center bottom;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  transition: 1s;
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0.454);
+}
+.photo > div:nth-of-type(5):hover {
+  box-shadow: inset -1500px 0px rgba(0, 0, 0, 0);
+  height: 30%;
+}
+.photo > div:nth-of-type(5) > h3 {
+  font-size: 35px;
+  color: beige;
+  margin-left: 30px;
+  display: flex;
+  align-self: center;
+}
+
+.mab {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mab > .row {
+  height: 30%;
+}
+.mab > .row > hgroup {
+  width: 100%;
+  display: flex;
+}
+.mab > .row > hgroup > h4 {
+  display: flex;
+  width: 30%;
+  height: 80%;
+  font-size: 70px;
+  font-weight: 300;
+  margin-left: 30px;
+}
+.mab > .row > hgroup > h6 {
+  display: flex;
+  width: 60%;
+  height: 80%;
+  font-size: 20px;
+  align-items: center;
+  margin-left: 85px;
+  color: rgb(84, 76, 76);
+  justify-content: flex-end;
+}
+.mab > .axha {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+.mab > .axha > .row2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.mab > .axha > .row2 > figure {
+  width: 30%;
+  height: 70%;
+  border: 1px solid black;
+  position: relative;
+}
+.mab > .axha > .row2 > figure::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(127, 255, 212, 0.38);
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+}
+.mab > .axha > .row2 > figure:hover::after {
+  height: 100%;
+}
+.mab > .axha > .row2 > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+  background-color: rgb(30, 28, 28);
+}
+footer > .me {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer > .me > figure {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+footer > .me > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer > .me > div {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer > .me > div > * {
+  width: 10%;
+  height: 40%;
+  display: flex;
+  overflow: hidden;
+}
+footer > .me > div > * > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+footer > .me > div > * > a img {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(248, 244, 244);
+  border-radius: 50%;
+  border: 2px solid rgb(249, 245, 245);
+}/*# sourceMappingURL=master1.css.map */

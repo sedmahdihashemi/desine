@@ -1,0 +1,26 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    // overflow-x: hidden;
+
+    >a{
+        color: inherit;
+        text-decoration: none;
+    }
+    >li{
+        list-style-type: none;
+    }
+    section, header, aside, footer, figure, article{
+        display: flex;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
